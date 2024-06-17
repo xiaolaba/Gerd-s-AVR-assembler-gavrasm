@@ -1,0 +1,235 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><script src="Gerd's%20AVR%20Assembler_4.6_files/analytics.js" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app202.us.archive.org';v.server_ms=219;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="Gerd's%20AVR%20Assembler_4.6_files/bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="Gerd's%20AVR%20Assembler_4.6_files/wombat.js" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="Gerd's%20AVR%20Assembler_4.6_files/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.avr-asm-tutorial.net:80/gavrasm/index_en.html","20200729110121","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1596020481");
+</script>
+<link rel="stylesheet" type="text/css" href="Gerd's%20AVR%20Assembler_4.6_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="Gerd's%20AVR%20Assembler_4.6_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+<title>Gerd's AVR Assembler</title>
+<meta name="GENERATOR" content="KWrite 4.0 for Linux">
+<meta name="author" content="Gerhard Schmidt">
+<meta name="COPYRIGHT" content="Gerhard Schmidt">
+<meta name="CREATED" content="20021224;03551234">
+<meta name="CHANGEDBY" content="Gerhard Schmidt">
+<meta name="CHANGED" content="20200705;12131234">
+<meta name="DESCRIPTION" content="gavrasm: free assembler for the command line for the ATMEL AVR microprocessor family">
+<meta name="KEYWORDS" content="gavrasm,AVR,Assembler,Download,Command line,free,AT90Sxx,ATMEL,">
+</head>
+
+<body bgcolor="#C0E0FF"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net:80/gavrasm/index_en.html</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(725,27,25,2,"web","http://www.avr-asm-tutorial.net/gavrasm/index_en.html","20200729110121",1996,"https://web-static.archive.org/_static/",["https://web-static.archive.org/_static/css/banner-styles.css?v=S1zqJCYt","https://web-static.archive.org/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ 
+<font size="2"><a name="top">Path:</a>
+<a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/index.html" target="_top">Home</a> =&gt; AVR-Assembler
+&nbsp;&nbsp;&nbsp;<a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/index_de.html">(Diese Seite in Deutsch:
+<img src="Gerd's%20AVR%20Assembler_4.6_files/flag_de.gif" width="30" height="15" alt="Flag DE"></a>)</font>
+<img src="Gerd's%20AVR%20Assembler_4.6_files/avr_150.jpeg" width="150" height="150" align="RIGHT" alt="Logo">
+<br>
+<img src="Gerd's%20AVR%20Assembler_4.6_files/gavrasm.gif" width="640" height="64" alt="Logo">
+
+<h1>Gerd's AVR assembler gavrasm</h1>
+A command line assembler for all AT90S-, AT90CAN-, AT90USB-, ATtiny-, ATmega and ATxmega-Types
+of microcontrollers of <a href="https://web.archive.org/web/20200729110121/http://www.atmel.com/" target="_blank">ATMEL</a>,
+with many extended and new features. Works on Win64 and Linux(i386) command
+lines. The advantages of gavrasm:
+
+<ul>
+  <li>Does not require def.inc files, all information is built-in.</li>
+  <li>Extended error checking and reporting especially helpful for beginners.</li>
+  <li>The <a href="#source">source code in Pascal language</a> is Open Source and
+    can be compiled with the Free Pascal compiler FPC for any desired operating system.</li>
+  <li>Very popular, see the <a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/gavrasm_stat/index.html">statistical analysis of
+    accesses to gavrasm</a></li>.
+  </ul>
+
+<h2>Note</h2>
+gavrasm is also available in a graphical version. This version is built in in the
+<a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/avr_sim/index_en.html">AVR simulator avr_sim</a>.
+This version is in english language.<br><br>
+
+The following versions of avr_sim correspond with the gavrasm versions:
+<ul>
+  <li>avr_sim 2.2: gavrasm 4.8</li>
+  <li>avr_sim 2.1: gavrasm 4.7</li>
+  <li>avr_sim 2.0: gavrasm 4.6</li>
+  <li>avr_sim 1.9: gavrasm 4.6</li>
+  <li>avr_sim 1.8: gavrasm 4.5</li>
+  <li>avr_sim 1.7: gavrasm 4.4</li>
+  <li>avr_sim 1.6: gavrasm 4.3</li>
+  <li>avr_sim 1.5: gavrasm 4.2</li>
+  <li>avr_sim 1.4: gavrasm 4.1</li>
+  <li>avr_sim 1.3: gavrasm 4.0</li>
+  <li>avr_sim 1.2: gavrasm 3.9</li>
+  <li>avr_sim 1.1: gavrasm 3.8</li>
+  <li>avr_sim 1.0: gavrasm 3.7</li>
+  </ul>
+
+<h2>Languages</h2>
+My AVR-Assembler is available in an english, french, german and turkish version and can
+easily be translated to other languages (send me your edited gavrlang_xx.pas and the
+ReadMe.Txt file for further translation to other languages). An experimental Chinese
+version is available at
+<a href="https://web.archive.org/web/20200729110121/https://github.com/xiaolaba/gavrasm_CHT">Github</a>. See the
+<a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/index_de.html">German page</a> for the German version.
+
+<h2>Features</h2>
+View the <a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v48/ReadMe.Txt">ReadMe.Txt</a> for more informations on features.
+See also the <a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/gavrasmi_en.html">introduction to the use</a> and some notes on special
+features of gavrasm.
+
+<h2>Mail on new version releases</h2>
+Please <a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/mailform.html" target="_BLANK">fill in the form</a> and mail it to me.
+You'll receive a mail whenever a new version of gavrasm is released.
+
+<h2>Download and installation</h2>
+For Linux and Windows 64-Bit compiled versions are provided. Unpack the executable
+and a readme file to your desired location. See the readme for command line options
+and use.
+
+<br><br>
+The <a name="source">source code</a> is written in Pascal for
+<a href="https://web.archive.org/web/20200729110121/http://www.freepascal.org/">FreePascal</a>. It is available for
+Linux and DOS/Win (differs in line end encoding only).
+<br><br>
+
+Unpack the zipped files, copy your desired language file gavrlang_xx.pas, rename
+it to gavrlang.pas and compile with the Pascal compiler (fpc, see
+http://www.freepascal.org).
+
+<h2>All available versions</h2>
+
+<table border="2">
+<tbody><tr><th rowspan="2">Version</th><th>Publication</th><th colspan="4">Executable Linux-64-Bit versions</th>
+  <th colspan="4">Executable Windows-64-Bit versions</th>
+  <th colspan="2">FPC source code</th></tr>
+<tr><th>Month/Year</th>
+  <th>EN</th><th>DE</th><th>FR</th><th>TR</th>
+  <th>EN</th><th>DE</th><th>FR</th><th>TR</th>
+  <th>Linux</th><th>DOS/WIN</th></tr>
+<tr><td>4.8</td><td>July 2020</td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v48/gavrasm_lin_i386_x64_en_48.zip">Lin64-EN</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v48/gavrasm_lin_i386_x64_de_48.zip">Lin64-DE</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v48/gavrasm_lin_i386_x64_fr_48.zip">Lin64-FR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v48/gavrasm_lin_i386_x64_tr_48.zip">Lin64-TR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v48/gavrasm_win64_en_48.zip">Win64-EN</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v48/gavrasm_win64_de_48.zip">Win64-DE</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v48/gavrasm_win64_fr_48.zip">Win64-FR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v48/gavrasm_win64_tr_48.zip">Win64-TR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v48/gavrasm_sources_lin_48.zip">Lin-SRC</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v48/gavrasm_sources_doswin_48.zip">DOS/Win-SRC</a></td>
+  </tr>
+<tr><td>4.7</td><td>June 2020</td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v47/gavrasm_lin_i386_x64_en_47.zip">Lin64-EN</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v47/gavrasm_lin_i386_x64_de_47.zip">Lin64-DE</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v47/gavrasm_lin_i386_x64_fr_47.zip">Lin64-FR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v47/gavrasm_lin_i386_x64_tr_47.zip">Lin64-TR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v47/gavrasm_win64_en_47.zip">Win64-EN</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v47/gavrasm_win64_de_47.zip">Win64-DE</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v47/gavrasm_win64_fr_47.zip">Win64-FR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v47/gavrasm_win64_tr_47.zip">Win64-TR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v47/gavrasm_sources_lin_47.zip">Lin-SRC</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v47/gavrasm_sources_doswin_47.zip">DOS/Win-SRC</a></td>
+  </tr>
+<tr><td>4.6</td><td>February 2020</td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v46/gavrasm_lin_i386_x64_en_46.zip">Lin64-EN</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v46/gavrasm_lin_i386_x64_de_46.zip">Lin64-DE</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v46/gavrasm_lin_i386_x64_fr_46.zip">Lin64-FR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v46/gavrasm_lin_i386_x64_tr_46.zip">Lin64-TR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v46/gavrasm_win64_en_46.zip">Win64-EN</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v46/gavrasm_win64_de_46.zip">Win64-DE</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v46/gavrasm_win64_fr_46.zip">Win64-FR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v46/gavrasm_win64_tr_46.zip">Win64-TR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v46/gavrasm_sources_lin_46.zip">Lin-SRC</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v46/gavrasm_sources_doswin_46.zip">DOS/Win-SRC</a></td>
+  </tr>
+<tr><td>4.5</td><td>November 2019</td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v45/gavrasm_lin_i386_x64_en_45.zip">Lin64-EN</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v45/gavrasm_lin_i386_x64_de_45.zip">Lin64-DE</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v45/gavrasm_lin_i386_x64_fr_45.zip">Lin64-FR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v45/gavrasm_lin_i386_x64_tr_45.zip">Lin64-TR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v45/gavrasm_win64_en_45.zip">Win64-EN</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v45/gavrasm_win64_de_45.zip">Win64-DE</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v45/gavrasm_win64_fr_45.zip">Win64-FR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v45/gavrasm_win64_tr_45.zip">Win64-TR</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v45/gavrasm_sources_lin_45.zip">Lin-SRC</a></td>
+  <td><a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/gavrasm/v45/gavrasm_sources_doswin_45.zip">DOS/Win-SRC</a></td>
+  </tr>
+</tbody></table>
+
+<h2>Versions not available any more</h2>
+<table border="2">
+<tbody><tr><th>Version</th><th>Date</th><th>Version</th><th>Date</th><th>Version</th><th>Date</th><th>Version</th><th>Date</th></tr>
+<tr><td>4.4</td><td>October 2019</td><td>4.3</td><td>July 2019</td>
+  <td>4.2</td><td>March 2019</td><td>4.1</td><td>December 2018</td></tr>
+<tr><td>4.0</td><td>September 2018</td><td>3.9</td><td>June 2018</td>
+  <td>3.8</td><td>April 2018</td><td>3.7</td><td>October 2017</td></tr>
+<tr><td>3.6</td><td>January 2017</td><td>3.5</td><td>January 2016</td>
+  <td>3.4</td><td>December 2014</td><td>3.3</td><td>June 2012</td></tr>
+<tr><td>3.2</td><td>May 2011</td><td>3.1</td><td>December 2011</td>
+  <td>3.0</td><td>July 2011</td><td>2.9</td><td>January 2011</td></tr>
+<tr><td>2.8</td><td>January 2011</td><td>2.7</td><td>November 2010</td>
+  <td>2.6</td><td>May 2010</td><td>2.5</td><td>February 2010</td></tr>
+<tr><td>2.4</td><td>January 2010</td><td>2.3</td><td>May 2009</td>
+  <td>2.2</td><td>December 2008</td><td>2.1</td><td>December 2006</td></tr>
+<tr><td>2.0</td><td>September 2006</td><td>1.9</td><td>August 2006</td>
+  <td>1.8</td><td>July 2006</td><td>1.7</td><td>May 2006</td></tr>
+<tr><td>1.6</td><td>December 2005</td><td>1.5</td><td>September 2005</td>
+  <td>1.4</td><td>July 2005</td><td>1.3</td><td>May 2005</td></tr>
+<tr><td>1.2</td><td>March 2005</td><td>1.1</td><td>January 2005</td>
+  <td>1.0</td><td>October 2004</td><td>0.9</td><td>March 2004</td></tr>
+<tr><td>0.8</td><td>February 2004</td><td>0.7</td><td>November 2003</td>
+  <td>0.6</td><td>September 2003</td><td>0.5</td><td>August 2003</td></tr>
+<tr><td>0.4</td><td>July 2003</td><td>0.3</td><td>June 2003</td>
+  <td>0.2</td><td>May 2003</td><td>0.1</td><td>December 2002</td><td></td></tr>
+</tbody></table>
+
+<h2>Error reports</h2>
+This software has been tested intensively, but can still have bugs. Therefore take
+caution when using. Reports on bugs and missing features please to
+gavrasm (at) avr-asm-tutorial.net, Subject=gavrasm-bug 4.8.
+
+<br><br>
+<small>
+©2003-2020 by
+<a href="https://web.archive.org/web/20200729110121/http://www.avr-asm-tutorial.net/">http://www.avr-asm-tutorial.net</a>
+</small>
+
+
+
+</body></html>
+<!--
+     FILE ARCHIVED ON 11:01:21 Jul 29, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:37:45 Jun 17, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.693
+  exclusion.robots: 0.181
+  exclusion.robots.policy: 0.169
+  esindex: 0.009
+  cdx.remote: 10.999
+  LoadShardBlock: 57.655 (3)
+  PetaboxLoader3.datanode: 109.058 (4)
+  load_resource: 121.114
+  PetaboxLoader3.resolve: 43.075
+-->
