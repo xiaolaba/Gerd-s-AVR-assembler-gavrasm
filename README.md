@@ -1,4 +1,5 @@
-![圖片](https://github.com/xiaolaba/Gerd-s-AVR-assembler-gavrasm/assets/2533993/b4f8c6d3-8da5-4f20-a0e4-4f5b63687e1b)# gavrasm_EN_36_WIN64
+
+# gavrasm_EN_36_WIN64
 Originator and credits, http://www.avr-asm-tutorial.net/gavrasm/index_en.html#source, it was down, load my backup
 
 how to compile
@@ -12,6 +13,9 @@ download gavrasm_sources_doswin_45.zip source code, unzip C:\FPC\gavrasm_sources
 copy your desired language file gavrlang_xx.pas, rename it to gavrlang.pas  
 compile or build or make gavrlang.pas, no error
 compile or build or make gavrasm.pas, error as following
+
+![圖片](https://github.com/xiaolaba/Gerd-s-AVR-assembler-gavrasm/assets/2533993/b4f8c6d3-8da5-4f20-a0e4-4f5b63687e1b)
+
 
 failed, gavrasm.pas, V3.6 ok, Ver4.5 & Ver4.6
 line 437 Longint2Hex, error 
