@@ -29,19 +29,19 @@ line 437 Longint2Hex, error
 	行號  512:       Writeln(fl,'        ',Longint2HexN(6,ListGetAddressLongInt+1),'   ',LongInt2HexN(4,w2));
 ```
 
-refer to gavrasm.pas, there is function LongInt2HexN
+refer to gavrasm.pas, there is function LongInt2HexN  
 change line 437, add 1 line,
 ```
         Writeln('  ',cType,nDefined:6,nUsed:6,iValue:11, LongInt2HexN(nUsed,iValue),' ',sName);
 ```
 
-change line 512, add 1 line to,
+change line 512, add 1 line to,  
 ```
     {Writeln(fl,ListGetLineAndAddress,'  ',Longint2HexN(4,w1),'  ',Copy(cl.sLine,cl.pInst,255));}
     Writeln(fl,ListGetLineAndAddress,'  ', LongInt2HexN(4,w1),'  ',Copy(cl.sLine,cl.pInst,255));
 ```    
 
 compile or build or make gavrasm.pas again,  
-gavrasm.exe will be produced
+gavrasm.exe will be produced  
 
-V4.5 ok, V4.6 still another bug ??
+V4.5 ok, V4.6 still another bug ??  
