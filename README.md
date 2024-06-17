@@ -9,7 +9,7 @@ local archive E:\backup\2017-07-21 H trip\DIY\2017-09-06 AVR tiny bootloader ass
 download Free Pascal compiler (fpc, see http://www.freepascal.org).  
 install FPC, mine is C:\FPC\3.2.2   
 invoke FPC in win10, nothing showing up,   
-crated batch file run_fp.bat, save to C:\FPC\3.2.2\bin\i386-win32, double click & run FPC IDE explicitly,  
+created batch file [run_fp.bat](run_fp.bat), save to C:\FPC\3.2.2\bin\i386-win32, double click & run FPC IDE explicitly,  
 in FPC IDE menu, Compile -> Target -> Win32 for i386  
 
 download gavrasm_sources_doswin_45.zip source code, unzip C:\FPC\gavrasm_sources_doswin_45 (or version 4.5)  
