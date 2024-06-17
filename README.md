@@ -2,6 +2,9 @@
 # gavrasm
 Originator and credits, http://www.avr-asm-tutorial.net/gavrasm/index_en.html#source, it was down, load my backup
 
+
+local archive E:\backup\2017-07-21 H trip\DIY\2017-09-06 AVR tiny bootloader assembler   
+
 how to compile
 download Free Pascal compiler (fpc, see http://www.freepascal.org).  
 install FPC, mine is C:\FPC\3.2.2   
