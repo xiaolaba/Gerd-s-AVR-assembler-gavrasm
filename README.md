@@ -59,7 +59,7 @@ archive E:\2019-11-11_H_trip\DIY\2024-06-06 2N5484\twoMHz_square
 [asm.bat](asm.bat), build hex by uses gavrasm or avrasm2.exe, then uses usbtiny to burn hex to arduino nano/uno, chip 328 or 168  
 [twoMHz_square_wave_asm.asm](twoMHz_square_wave_asm.asm), asm source code for testing  
 IO waveform of chip 328 or 168, every 8bit rolling getting stretched, do not understnad why was that.   
-[why_every_8_bit_rotation_prolonged_2.JPG](why_every_8_bit_rotation_prolonged_2.JPG)
+![why_every_8_bit_rotation_prolonged_2.JPG](why_every_8_bit_rotation_prolonged_2.JPG)
 
 
 ### related stuff
