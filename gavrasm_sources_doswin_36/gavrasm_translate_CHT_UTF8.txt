@@ -1,0 +1,8 @@
+{1} 'Unknown option on command line: ',
+{1}'命令行上的未知選項:',
+
+{2} 'Source file not found: ',
+{2}'源文件未找到:',
+
+{3} 'Error ',
+{3}'錯誤',
